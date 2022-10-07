@@ -1,0 +1,73 @@
+@media(max-width:1350px){
+    .container{
+        width: 85%;
+    }
+}
+@media(max-width:1024px){
+    header nav li a,.contact a,.project p, #about p{
+        font-size: 19px;
+    }
+    header h1,footer p{
+        font-size: 22px;
+    }
+    .contact div{
+        margin-left: 10px;
+    }
+    .contact img{
+        width: 45px;
+    }
+}
+@media(max-width:850px){
+    header{
+        height: 75px;
+    }
+    .contacts-block{
+        flex-direction: column;
+        width: fit-content;
+        margin: 50px auto;
+    }
+    .contact{
+        align-self: flex-start;
+    }
+    .contact:not(:last-child){
+        margin-bottom: 20px ;
+    }
+
+
+
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        align-self: center;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(13px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+    }
+    .container nav{
+        position: fixed;
+        left: 0;
+        top: -100%;
+        gap: 0;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 15px 0;
+    }
+    header nav li:nth-child(1){
+        margin-left: 8%;
+    }
+    header nav li:nth-child(3){
+        margin-right: 8%;
+    }
+    .container nav.active{
+        top: 77px;
+    }
+}
